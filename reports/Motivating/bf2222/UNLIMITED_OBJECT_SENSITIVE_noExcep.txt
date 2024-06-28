@@ -1,0 +1,1998 @@
+Creating SDG...
+SDG: 6198 nodes and 90047 edges
+
+
+ANALYSIS
+Method: void main.Main.main(String[])
+    LINE 11: (void main.Main.main(java.lang.String[]):0) v3 = new main.Main
+    LINE 11: (void main.Main.main(java.lang.String[]):4) v3.<init>()
+    LINE 12: (void main.Main.main(java.lang.String[]):10) v3.source = #(0)
+    LINE 13: (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))
+    LINE 13: (void main.Main.main(java.lang.String[]):19) v3.source = v8
+    LINE 14: (void main.Main.main(java.lang.String[]):24) v3.base = #(0)
+    LINE 15: (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))
+    LINE 15: (void main.Main.main(java.lang.String[]):34) v11 = v3.source
+    LINE 15: (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11
+    LINE 15: (void main.Main.main(java.lang.String[]):38) v3.sink = v12
+    LINE 16: (void main.Main.main(java.lang.String[]):41) v13 = java.lang.System.out
+    LINE 16: (void main.Main.main(java.lang.String[]):45) v14 = v3.sink
+    LINE 16: (void main.Main.main(java.lang.String[]):48) v13.println(v14)
+    LINE 17: (void main.Main.main(java.lang.String[]):51) v16 = java.lang.System.out
+    LINE 17: (void main.Main.main(java.lang.String[]):55) v17 = v3.source
+    LINE 17: (void main.Main.main(java.lang.String[]):59) v18 = v3.sink
+    LINE 17: (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18
+    LINE 17: (void main.Main.main(java.lang.String[]):63) v16.println(v19)
+    LINE 18: (void main.Main.main(java.lang.String[]):66) v21 = java.lang.System.out
+    LINE 18: (void main.Main.main(java.lang.String[]):70) v22 = v3.sink
+    LINE 18: (void main.Main.main(java.lang.String[]):74) v23 = v3.source
+    LINE 18: (void main.Main.main(java.lang.String[]):77) v24 = v22 + v23
+    LINE 18: (void main.Main.main(java.lang.String[]):78) v21.println(v24)
+    LINE 19: (void main.Main.main(java.lang.String[]):81) return
+1.1.a analysis
+Sources: 8
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):10) v3.source = #(0)
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):59) v18 = v3.sink
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):51) v16 = java.lang.System.out
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):19) v3.source = v8
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):62) v19 = v17 + v18
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):63) v16.println(v19)
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):55) v17 = v3.source
+Sinks: 12
+	SINK: SINK/(void main.Main.main(java.lang.String[]):48) v13.println(v14)
+	SINK: SINK/(void main.Main.main(java.lang.String[]):34) v11 = v3.source
+	SINK: SINK/(void main.Main.main(java.lang.String[]):45) v14 = v3.sink
+	SINK: SINK/(void main.Main.main(java.lang.String[]):38) v3.sink = v12
+	SINK: SINK/(void main.Main.main(java.lang.String[]):78) v21.println(v24)
+	SINK: SINK/(void main.Main.main(java.lang.String[]):66) v21 = java.lang.System.out
+	SINK: SINK/(void main.Main.main(java.lang.String[]):37) v12 = v10 + v11
+	SINK: SINK/(void main.Main.main(java.lang.String[]):77) v24 = v22 + v23
+	SINK: SINK/(void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))
+	SINK: SINK/(void main.Main.main(java.lang.String[]):41) v13 = java.lang.System.out
+	SINK: SINK/(void main.Main.main(java.lang.String[]):74) v23 = v3.source
+	SINK: SINK/(void main.Main.main(java.lang.String[]):70) v22 = v3.sink
+1.1.b analysis
+Sources: 12
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):45) v14 = v3.sink
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):70) v22 = v3.sink
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):78) v21.println(v24)
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):37) v12 = v10 + v11
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):66) v21 = java.lang.System.out
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):41) v13 = java.lang.System.out
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):38) v3.sink = v12
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):74) v23 = v3.source
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):48) v13.println(v14)
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):77) v24 = v22 + v23
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):34) v11 = v3.source
+Sinks: 8
+	SINK: SINK/(void main.Main.main(java.lang.String[]):55) v17 = v3.source
+	SINK: SINK/(void main.Main.main(java.lang.String[]):62) v19 = v17 + v18
+	SINK: SINK/(void main.Main.main(java.lang.String[]):51) v16 = java.lang.System.out
+	SINK: SINK/(void main.Main.main(java.lang.String[]):63) v16.println(v19)
+	SINK: SINK/(void main.Main.main(java.lang.String[]):59) v18 = v3.sink
+	SINK: SINK/(void main.Main.main(java.lang.String[]):10) v3.source = #(0)
+	SINK: SINK/(void main.Main.main(java.lang.String[]):19) v3.source = v8
+	SINK: SINK/(void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))
+
+VIOLATIONS BETWEEN LEFT AND RIGHT
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):74) v23 = v3.source, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):77) v24 = v22 + v23, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):70) v22 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):34) v11 = v3.source, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):55) v17 = v3.source to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):48) v13.println(v14)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):48) v13.println(v14)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):38) v3.sink = v12, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):74) v23 = v3.source, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):70) v22 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):77) v24 = v22 + v23, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):45) v14 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):63) v16.println(v19) to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):48) v13.println(v14)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):34) v11 = v3.source, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18 to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0 to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 31
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):77) v24 = v22 + v23, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):38) v3.sink = v12, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):74) v23 = v3.source, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):45) v14 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):70) v22 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):34) v11 = v3.source, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):45) v14 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):51) v16 = java.lang.System.out to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):48) v13.println(v14)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):59) v18 = v3.sink to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):38) v3.sink = v12, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):41) v13 = java.lang.System.out to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))->ret to (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):34) v11 = v3.source to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11 to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1)) to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1)) to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):38) v3.sink = v12 to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):34) v11 = v3.source to (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11 to (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):45) v14 = v3.sink to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))->ret to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))->ret to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):38) v3.sink = v12 to (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):34) v11 = v3.source to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1)) to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11 to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):48) v13.println(v14)->act0 to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 31
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):34) v11 = v3.source to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11 to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):38) v3.sink = v12 to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1)) to (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):38) v3.sink = v12 to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))->ret to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):48) v13.println(v14) to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
+INSTRUCTION VIOLATIONS: 61
+TOTAL VIOLATIONS: 461
+LINE violations between left and right
+Method: void main.Main.main(String[])
+		Illegal flow from void main.Main.main(java.lang.String[]) (line 13) to void main.Main.main(java.lang.String[]) (line 15), Instructions: 9, Violations: 9
+		Illegal flow from void main.Main.main(java.lang.String[]) (line 13) to void main.Main.main(java.lang.String[]) (line 16), Instructions: 7, Violations: 27
+		Illegal flow from void main.Main.main(java.lang.String[]) (line 13) to void main.Main.main(java.lang.String[]) (line 18), Instructions: 15, Violations: 75
+		Illegal flow from void main.Main.main(java.lang.String[]) (line 15) to void main.Main.main(java.lang.String[]) (line 17), Instructions: 20, Violations: 120
+		Illegal flow from void main.Main.main(java.lang.String[]) (line 16) to void main.Main.main(java.lang.String[]) (line 17), Instructions: 4, Violations: 94
+		Illegal flow from void main.Main.main(java.lang.String[]) (line 17) to void main.Main.main(java.lang.String[]) (line 18), Instructions: 6, Violations: 136
+	Method Line Violations: 6
+	Method Instruction Violations: 61
+	Method Total Violations: 461
+Total Line Violations: 6
+void main.Main.main(String[])
+      1: Illicit Flow From SDGNode 29 At SDGNode 45, visible for low
+           13->15
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+      2: Illicit Flow From SDGNode 29 At SDGNode 48, visible for low
+           13->15
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+      3: Illicit Flow From SDGNode 29 At SDGNode 49, visible for low
+           13->15
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+      4: Illicit Flow From SDGNode 29 At SDGNode 54, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      5: Illicit Flow From SDGNode 29 At SDGNode 59, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 59 - param 1 [v14] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      6: Illicit Flow From SDGNode 29 At SDGNode 76, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 76 - v22 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      7: Illicit Flow From SDGNode 29 At SDGNode 79, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 79 - v23 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      8: Illicit Flow From SDGNode 29 At SDGNode 82, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 82 - v24 = v22 + v23 Kind: EXPR Operator: assign Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      9: Illicit Flow From SDGNode 29 At SDGNode 85, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 85 - param 1 [v24] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      10: Illicit Flow From SDGNode 29 At SDGNode 3509, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3509 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      11: Illicit Flow From SDGNode 29 At SDGNode 3514, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3514 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      12: Illicit Flow From SDGNode 29 At SDGNode 3517, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3517 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      13: Illicit Flow From SDGNode 29 At SDGNode 3523, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3523 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      14: Illicit Flow From SDGNode 29 At SDGNode 3525, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3525 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      15: Illicit Flow From SDGNode 29 At SDGNode 3526, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3526 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      16: Illicit Flow From SDGNode 29 At SDGNode 3527, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3527 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      17: Illicit Flow From SDGNode 29 At SDGNode 3528, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3528 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      18: Illicit Flow From SDGNode 29 At SDGNode 3529, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3529 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      19: Illicit Flow From SDGNode 29 At SDGNode 3530, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3530 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      20: Illicit Flow From SDGNode 29 At SDGNode 3531, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3531 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      21: Illicit Flow From SDGNode 29 At SDGNode 3532, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3532 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      22: Illicit Flow From SDGNode 29 At SDGNode 3533, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3533 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      23: Illicit Flow From SDGNode 29 At SDGNode 3534, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3534 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      24: Illicit Flow From SDGNode 29 At SDGNode 3535, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3535 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      25: Illicit Flow From SDGNode 29 At SDGNode 3536, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3536 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      26: Illicit Flow From SDGNode 29 At SDGNode 3537, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3537 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      27: Illicit Flow From SDGNode 29 At SDGNode 3538, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3538 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      28: Illicit Flow From SDGNode 29 At SDGNode 3539, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3539 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      29: Illicit Flow From SDGNode 29 At SDGNode 3540, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3540 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      30: Illicit Flow From SDGNode 29 At SDGNode 3541, visible for low
+           13->16
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3541 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      31: Illicit Flow From SDGNode 29 At SDGNode 3591, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3591 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      32: Illicit Flow From SDGNode 29 At SDGNode 3596, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3596 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      33: Illicit Flow From SDGNode 29 At SDGNode 3599, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3599 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      34: Illicit Flow From SDGNode 29 At SDGNode 3605, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3605 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      35: Illicit Flow From SDGNode 29 At SDGNode 3607, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3607 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      36: Illicit Flow From SDGNode 29 At SDGNode 3608, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3608 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      37: Illicit Flow From SDGNode 29 At SDGNode 3609, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3609 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      38: Illicit Flow From SDGNode 29 At SDGNode 3610, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3610 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      39: Illicit Flow From SDGNode 29 At SDGNode 3611, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3611 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      40: Illicit Flow From SDGNode 29 At SDGNode 3612, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3612 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      41: Illicit Flow From SDGNode 29 At SDGNode 3613, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3613 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      42: Illicit Flow From SDGNode 29 At SDGNode 3614, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3614 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      43: Illicit Flow From SDGNode 29 At SDGNode 3615, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3615 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      44: Illicit Flow From SDGNode 29 At SDGNode 3616, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3616 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      45: Illicit Flow From SDGNode 29 At SDGNode 3617, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3617 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      46: Illicit Flow From SDGNode 29 At SDGNode 3618, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3618 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      47: Illicit Flow From SDGNode 29 At SDGNode 3619, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3619 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      48: Illicit Flow From SDGNode 29 At SDGNode 3620, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3620 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      49: Illicit Flow From SDGNode 29 At SDGNode 3621, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3621 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      50: Illicit Flow From SDGNode 29 At SDGNode 3622, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3622 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      51: Illicit Flow From SDGNode 29 At SDGNode 3623, visible for low
+           13->18
+           Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3623 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      52: Illicit Flow From SDGNode 32 At SDGNode 45, visible for low
+           13->15
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+      53: Illicit Flow From SDGNode 32 At SDGNode 48, visible for low
+           13->15
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+      54: Illicit Flow From SDGNode 32 At SDGNode 49, visible for low
+           13->15
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+      55: Illicit Flow From SDGNode 32 At SDGNode 54, visible for low
+           13->16
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      56: Illicit Flow From SDGNode 32 At SDGNode 59, visible for low
+           13->16
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 59 - param 1 [v14] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      57: Illicit Flow From SDGNode 32 At SDGNode 76, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 76 - v22 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      58: Illicit Flow From SDGNode 32 At SDGNode 79, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 79 - v23 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      59: Illicit Flow From SDGNode 32 At SDGNode 82, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 82 - v24 = v22 + v23 Kind: EXPR Operator: assign Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      60: Illicit Flow From SDGNode 32 At SDGNode 85, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 85 - param 1 [v24] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      61: Illicit Flow From SDGNode 32 At SDGNode 3591, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3591 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      62: Illicit Flow From SDGNode 32 At SDGNode 3596, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3596 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      63: Illicit Flow From SDGNode 32 At SDGNode 3599, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3599 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      64: Illicit Flow From SDGNode 32 At SDGNode 3605, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3605 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      65: Illicit Flow From SDGNode 32 At SDGNode 3607, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3607 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      66: Illicit Flow From SDGNode 32 At SDGNode 3608, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3608 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      67: Illicit Flow From SDGNode 32 At SDGNode 3609, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3609 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      68: Illicit Flow From SDGNode 32 At SDGNode 3610, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3610 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      69: Illicit Flow From SDGNode 32 At SDGNode 3611, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3611 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      70: Illicit Flow From SDGNode 32 At SDGNode 3612, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3612 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      71: Illicit Flow From SDGNode 32 At SDGNode 3613, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3613 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      72: Illicit Flow From SDGNode 32 At SDGNode 3614, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3614 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      73: Illicit Flow From SDGNode 32 At SDGNode 3615, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3615 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      74: Illicit Flow From SDGNode 32 At SDGNode 3616, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3616 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      75: Illicit Flow From SDGNode 32 At SDGNode 3617, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3617 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      76: Illicit Flow From SDGNode 32 At SDGNode 3618, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3618 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      77: Illicit Flow From SDGNode 32 At SDGNode 3619, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3619 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      78: Illicit Flow From SDGNode 32 At SDGNode 3620, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3620 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      79: Illicit Flow From SDGNode 32 At SDGNode 3621, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3621 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      80: Illicit Flow From SDGNode 32 At SDGNode 3622, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3622 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      81: Illicit Flow From SDGNode 32 At SDGNode 3623, visible for low
+           13->18
+           Source: 32 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3623 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      82: Illicit Flow From SDGNode 34 At SDGNode 45, visible for low
+           13->15
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+      83: Illicit Flow From SDGNode 34 At SDGNode 48, visible for low
+           13->15
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+      84: Illicit Flow From SDGNode 34 At SDGNode 49, visible for low
+           13->15
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+      85: Illicit Flow From SDGNode 34 At SDGNode 54, visible for low
+           13->16
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      86: Illicit Flow From SDGNode 34 At SDGNode 59, visible for low
+           13->16
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 59 - param 1 [v14] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+      87: Illicit Flow From SDGNode 34 At SDGNode 76, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 76 - v22 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      88: Illicit Flow From SDGNode 34 At SDGNode 79, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 79 - v23 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      89: Illicit Flow From SDGNode 34 At SDGNode 82, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 82 - v24 = v22 + v23 Kind: EXPR Operator: assign Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      90: Illicit Flow From SDGNode 34 At SDGNode 85, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 85 - param 1 [v24] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      91: Illicit Flow From SDGNode 34 At SDGNode 3591, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3591 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      92: Illicit Flow From SDGNode 34 At SDGNode 3596, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3596 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      93: Illicit Flow From SDGNode 34 At SDGNode 3599, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3599 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      94: Illicit Flow From SDGNode 34 At SDGNode 3605, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3605 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      95: Illicit Flow From SDGNode 34 At SDGNode 3607, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3607 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      96: Illicit Flow From SDGNode 34 At SDGNode 3608, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3608 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      97: Illicit Flow From SDGNode 34 At SDGNode 3609, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3609 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      98: Illicit Flow From SDGNode 34 At SDGNode 3610, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3610 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      99: Illicit Flow From SDGNode 34 At SDGNode 3611, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3611 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      100: Illicit Flow From SDGNode 34 At SDGNode 3612, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3612 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      101: Illicit Flow From SDGNode 34 At SDGNode 3613, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3613 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      102: Illicit Flow From SDGNode 34 At SDGNode 3614, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3614 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      103: Illicit Flow From SDGNode 34 At SDGNode 3615, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3615 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      104: Illicit Flow From SDGNode 34 At SDGNode 3616, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3616 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      105: Illicit Flow From SDGNode 34 At SDGNode 3617, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3617 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      106: Illicit Flow From SDGNode 34 At SDGNode 3618, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3618 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      107: Illicit Flow From SDGNode 34 At SDGNode 3619, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3619 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      108: Illicit Flow From SDGNode 34 At SDGNode 3620, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3620 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      109: Illicit Flow From SDGNode 34 At SDGNode 3621, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3621 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      110: Illicit Flow From SDGNode 34 At SDGNode 3622, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3622 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      111: Illicit Flow From SDGNode 34 At SDGNode 3623, visible for low
+           13->18
+           Source: 34 - v3.source = v8 Kind: EXPR Operator: modify Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0
+           Sink: 3623 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      112: Illicit Flow From SDGNode 61 At SDGNode 3591, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3591 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      113: Illicit Flow From SDGNode 61 At SDGNode 3596, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3596 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      114: Illicit Flow From SDGNode 61 At SDGNode 3599, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3599 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      115: Illicit Flow From SDGNode 61 At SDGNode 3605, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3605 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      116: Illicit Flow From SDGNode 61 At SDGNode 3607, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3607 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      117: Illicit Flow From SDGNode 61 At SDGNode 3608, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3608 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      118: Illicit Flow From SDGNode 61 At SDGNode 3609, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3609 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      119: Illicit Flow From SDGNode 61 At SDGNode 3610, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3610 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      120: Illicit Flow From SDGNode 61 At SDGNode 3611, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3611 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      121: Illicit Flow From SDGNode 61 At SDGNode 3612, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3612 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      122: Illicit Flow From SDGNode 61 At SDGNode 3613, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3613 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      123: Illicit Flow From SDGNode 61 At SDGNode 3614, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3614 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      124: Illicit Flow From SDGNode 61 At SDGNode 3615, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3615 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      125: Illicit Flow From SDGNode 61 At SDGNode 3616, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3616 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      126: Illicit Flow From SDGNode 61 At SDGNode 3617, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3617 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      127: Illicit Flow From SDGNode 61 At SDGNode 3618, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3618 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      128: Illicit Flow From SDGNode 61 At SDGNode 3619, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3619 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      129: Illicit Flow From SDGNode 61 At SDGNode 3620, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3620 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      130: Illicit Flow From SDGNode 61 At SDGNode 3621, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3621 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      131: Illicit Flow From SDGNode 61 At SDGNode 3622, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3622 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      132: Illicit Flow From SDGNode 61 At SDGNode 3623, visible for low
+           17->18
+           Source: 61 - v16 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3623 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      133: Illicit Flow From SDGNode 63 At SDGNode 3591, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3591 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      134: Illicit Flow From SDGNode 63 At SDGNode 3596, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3596 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      135: Illicit Flow From SDGNode 63 At SDGNode 3599, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3599 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      136: Illicit Flow From SDGNode 63 At SDGNode 3605, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3605 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      137: Illicit Flow From SDGNode 63 At SDGNode 3607, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3607 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      138: Illicit Flow From SDGNode 63 At SDGNode 3608, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3608 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      139: Illicit Flow From SDGNode 63 At SDGNode 3609, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3609 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      140: Illicit Flow From SDGNode 63 At SDGNode 3610, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3610 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      141: Illicit Flow From SDGNode 63 At SDGNode 3611, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3611 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      142: Illicit Flow From SDGNode 63 At SDGNode 3612, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3612 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      143: Illicit Flow From SDGNode 63 At SDGNode 3613, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3613 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      144: Illicit Flow From SDGNode 63 At SDGNode 3614, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3614 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      145: Illicit Flow From SDGNode 63 At SDGNode 3615, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3615 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      146: Illicit Flow From SDGNode 63 At SDGNode 3616, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3616 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      147: Illicit Flow From SDGNode 63 At SDGNode 3617, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3617 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      148: Illicit Flow From SDGNode 63 At SDGNode 3618, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3618 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      149: Illicit Flow From SDGNode 63 At SDGNode 3619, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3619 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      150: Illicit Flow From SDGNode 63 At SDGNode 3620, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3620 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      151: Illicit Flow From SDGNode 63 At SDGNode 3621, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3621 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      152: Illicit Flow From SDGNode 63 At SDGNode 3622, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3622 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      153: Illicit Flow From SDGNode 63 At SDGNode 3623, visible for low
+           17->18
+           Source: 63 - v17 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3623 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      154: Illicit Flow From SDGNode 66 At SDGNode 3591, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3591 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      155: Illicit Flow From SDGNode 66 At SDGNode 3596, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3596 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      156: Illicit Flow From SDGNode 66 At SDGNode 3599, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3599 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      157: Illicit Flow From SDGNode 66 At SDGNode 3605, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3605 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      158: Illicit Flow From SDGNode 66 At SDGNode 3607, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3607 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      159: Illicit Flow From SDGNode 66 At SDGNode 3608, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3608 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      160: Illicit Flow From SDGNode 66 At SDGNode 3609, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3609 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      161: Illicit Flow From SDGNode 66 At SDGNode 3610, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3610 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      162: Illicit Flow From SDGNode 66 At SDGNode 3611, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3611 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      163: Illicit Flow From SDGNode 66 At SDGNode 3612, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3612 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      164: Illicit Flow From SDGNode 66 At SDGNode 3613, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3613 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      165: Illicit Flow From SDGNode 66 At SDGNode 3614, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3614 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      166: Illicit Flow From SDGNode 66 At SDGNode 3615, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3615 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      167: Illicit Flow From SDGNode 66 At SDGNode 3616, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3616 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      168: Illicit Flow From SDGNode 66 At SDGNode 3617, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3617 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      169: Illicit Flow From SDGNode 66 At SDGNode 3618, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3618 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      170: Illicit Flow From SDGNode 66 At SDGNode 3619, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3619 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      171: Illicit Flow From SDGNode 66 At SDGNode 3620, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3620 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      172: Illicit Flow From SDGNode 66 At SDGNode 3621, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3621 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      173: Illicit Flow From SDGNode 66 At SDGNode 3622, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3622 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      174: Illicit Flow From SDGNode 66 At SDGNode 3623, visible for low
+           17->18
+           Source: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3623 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      175: Illicit Flow From SDGNode 69 At SDGNode 3591, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3591 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      176: Illicit Flow From SDGNode 69 At SDGNode 3596, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3596 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      177: Illicit Flow From SDGNode 69 At SDGNode 3599, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3599 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      178: Illicit Flow From SDGNode 69 At SDGNode 3605, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3605 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      179: Illicit Flow From SDGNode 69 At SDGNode 3607, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3607 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      180: Illicit Flow From SDGNode 69 At SDGNode 3608, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3608 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      181: Illicit Flow From SDGNode 69 At SDGNode 3609, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3609 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      182: Illicit Flow From SDGNode 69 At SDGNode 3610, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3610 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      183: Illicit Flow From SDGNode 69 At SDGNode 3611, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3611 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      184: Illicit Flow From SDGNode 69 At SDGNode 3612, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3612 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      185: Illicit Flow From SDGNode 69 At SDGNode 3613, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3613 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      186: Illicit Flow From SDGNode 69 At SDGNode 3614, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3614 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      187: Illicit Flow From SDGNode 69 At SDGNode 3615, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3615 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      188: Illicit Flow From SDGNode 69 At SDGNode 3616, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3616 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      189: Illicit Flow From SDGNode 69 At SDGNode 3617, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3617 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      190: Illicit Flow From SDGNode 69 At SDGNode 3618, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3618 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      191: Illicit Flow From SDGNode 69 At SDGNode 3619, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3619 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      192: Illicit Flow From SDGNode 69 At SDGNode 3620, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3620 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      193: Illicit Flow From SDGNode 69 At SDGNode 3621, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3621 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      194: Illicit Flow From SDGNode 69 At SDGNode 3622, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3622 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      195: Illicit Flow From SDGNode 69 At SDGNode 3623, visible for low
+           17->18
+           Source: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3623 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      196: Illicit Flow From SDGNode 70 At SDGNode 3591, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3591 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      197: Illicit Flow From SDGNode 70 At SDGNode 3596, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3596 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      198: Illicit Flow From SDGNode 70 At SDGNode 3599, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3599 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      199: Illicit Flow From SDGNode 70 At SDGNode 3605, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3605 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      200: Illicit Flow From SDGNode 70 At SDGNode 3607, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3607 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      201: Illicit Flow From SDGNode 70 At SDGNode 3608, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3608 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      202: Illicit Flow From SDGNode 70 At SDGNode 3609, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3609 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      203: Illicit Flow From SDGNode 70 At SDGNode 3610, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3610 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      204: Illicit Flow From SDGNode 70 At SDGNode 3611, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3611 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      205: Illicit Flow From SDGNode 70 At SDGNode 3612, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3612 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      206: Illicit Flow From SDGNode 70 At SDGNode 3613, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3613 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      207: Illicit Flow From SDGNode 70 At SDGNode 3614, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3614 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      208: Illicit Flow From SDGNode 70 At SDGNode 3615, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3615 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      209: Illicit Flow From SDGNode 70 At SDGNode 3616, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3616 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      210: Illicit Flow From SDGNode 70 At SDGNode 3617, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3617 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      211: Illicit Flow From SDGNode 70 At SDGNode 3618, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3618 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      212: Illicit Flow From SDGNode 70 At SDGNode 3619, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3619 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      213: Illicit Flow From SDGNode 70 At SDGNode 3620, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3620 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      214: Illicit Flow From SDGNode 70 At SDGNode 3621, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3621 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      215: Illicit Flow From SDGNode 70 At SDGNode 3622, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3622 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      216: Illicit Flow From SDGNode 70 At SDGNode 3623, visible for low
+           17->18
+           Source: 70 - v16.println(v19) Kind: CALL Operator: call Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3623 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      217: Illicit Flow From SDGNode 3583 At SDGNode 3591, visible for low
+           17->18
+           Source: 3583 - [MR] |0|UNIQ(nextChar) Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3591 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      218: Illicit Flow From SDGNode 3584 At SDGNode 3596, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3596 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      219: Illicit Flow From SDGNode 3584 At SDGNode 3599, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3599 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      220: Illicit Flow From SDGNode 3584 At SDGNode 3605, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3605 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      221: Illicit Flow From SDGNode 3584 At SDGNode 3607, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3607 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      222: Illicit Flow From SDGNode 3584 At SDGNode 3608, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3608 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      223: Illicit Flow From SDGNode 3584 At SDGNode 3609, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3609 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      224: Illicit Flow From SDGNode 3584 At SDGNode 3610, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3610 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      225: Illicit Flow From SDGNode 3584 At SDGNode 3611, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3611 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      226: Illicit Flow From SDGNode 3584 At SDGNode 3612, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3612 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      227: Illicit Flow From SDGNode 3584 At SDGNode 3613, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3613 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      228: Illicit Flow From SDGNode 3584 At SDGNode 3614, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3614 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      229: Illicit Flow From SDGNode 3584 At SDGNode 3615, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3615 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      230: Illicit Flow From SDGNode 3584 At SDGNode 3616, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3616 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      231: Illicit Flow From SDGNode 3584 At SDGNode 3617, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3617 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      232: Illicit Flow From SDGNode 3584 At SDGNode 3618, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3618 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      233: Illicit Flow From SDGNode 3584 At SDGNode 3619, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3619 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      234: Illicit Flow From SDGNode 3584 At SDGNode 3620, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3620 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      235: Illicit Flow From SDGNode 3584 At SDGNode 3621, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3621 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      236: Illicit Flow From SDGNode 3584 At SDGNode 3622, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3622 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      237: Illicit Flow From SDGNode 3584 At SDGNode 3623, visible for low
+           17->18
+           Source: 3584 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3623 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      238: Illicit Flow From SDGNode 3588 At SDGNode 3596, visible for low
+           17->18
+           Source: 3588 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3596 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      239: Illicit Flow From SDGNode 3588 At SDGNode 3599, visible for low
+           17->18
+           Source: 3588 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3599 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      240: Illicit Flow From SDGNode 3588 At SDGNode 3605, visible for low
+           17->18
+           Source: 3588 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3605 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      241: Illicit Flow From SDGNode 3588 At SDGNode 3607, visible for low
+           17->18
+           Source: 3588 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3607 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      242: Illicit Flow From SDGNode 3588 At SDGNode 3608, visible for low
+           17->18
+           Source: 3588 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3608 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      243: Illicit Flow From SDGNode 3589 At SDGNode 3596, visible for low
+           17->18
+           Source: 3589 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3596 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      244: Illicit Flow From SDGNode 3589 At SDGNode 3599, visible for low
+           17->18
+           Source: 3589 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3599 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      245: Illicit Flow From SDGNode 3589 At SDGNode 3605, visible for low
+           17->18
+           Source: 3589 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3605 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      246: Illicit Flow From SDGNode 3589 At SDGNode 3607, visible for low
+           17->18
+           Source: 3589 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3607 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      247: Illicit Flow From SDGNode 3589 At SDGNode 3608, visible for low
+           17->18
+           Source: 3589 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+           Sink: 3608 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 18 Er: 18 Sc: 0 Ec: 0
+      248: Illicit Flow From SDGNode 40 At SDGNode 66, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      249: Illicit Flow From SDGNode 40 At SDGNode 69, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      250: Illicit Flow From SDGNode 40 At SDGNode 72, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 72 - param 1 [v19] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      251: Illicit Flow From SDGNode 40 At SDGNode 3550, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3550 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      252: Illicit Flow From SDGNode 40 At SDGNode 3555, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3555 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      253: Illicit Flow From SDGNode 40 At SDGNode 3558, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3558 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      254: Illicit Flow From SDGNode 40 At SDGNode 3564, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3564 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      255: Illicit Flow From SDGNode 40 At SDGNode 3566, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3566 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      256: Illicit Flow From SDGNode 40 At SDGNode 3567, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3567 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      257: Illicit Flow From SDGNode 40 At SDGNode 3568, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3568 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      258: Illicit Flow From SDGNode 40 At SDGNode 3569, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3569 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      259: Illicit Flow From SDGNode 40 At SDGNode 3570, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3570 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      260: Illicit Flow From SDGNode 40 At SDGNode 3571, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3571 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      261: Illicit Flow From SDGNode 40 At SDGNode 3572, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3572 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      262: Illicit Flow From SDGNode 40 At SDGNode 3573, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3573 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      263: Illicit Flow From SDGNode 40 At SDGNode 3574, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3574 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      264: Illicit Flow From SDGNode 40 At SDGNode 3575, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3575 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      265: Illicit Flow From SDGNode 40 At SDGNode 3576, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3576 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      266: Illicit Flow From SDGNode 40 At SDGNode 3577, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3577 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      267: Illicit Flow From SDGNode 40 At SDGNode 3578, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3578 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      268: Illicit Flow From SDGNode 40 At SDGNode 3579, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3579 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      269: Illicit Flow From SDGNode 40 At SDGNode 3580, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3580 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      270: Illicit Flow From SDGNode 40 At SDGNode 3581, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3581 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      271: Illicit Flow From SDGNode 40 At SDGNode 3582, visible for low
+           15->17
+           Source: 40 - v10 = v3.sink(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3582 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      272: Illicit Flow From SDGNode 43 At SDGNode 66, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      273: Illicit Flow From SDGNode 43 At SDGNode 69, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      274: Illicit Flow From SDGNode 43 At SDGNode 72, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 72 - param 1 [v19] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      275: Illicit Flow From SDGNode 43 At SDGNode 3550, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3550 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      276: Illicit Flow From SDGNode 43 At SDGNode 3555, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3555 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      277: Illicit Flow From SDGNode 43 At SDGNode 3558, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3558 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      278: Illicit Flow From SDGNode 43 At SDGNode 3564, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3564 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      279: Illicit Flow From SDGNode 43 At SDGNode 3566, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3566 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      280: Illicit Flow From SDGNode 43 At SDGNode 3567, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3567 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      281: Illicit Flow From SDGNode 43 At SDGNode 3568, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3568 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      282: Illicit Flow From SDGNode 43 At SDGNode 3569, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3569 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      283: Illicit Flow From SDGNode 43 At SDGNode 3570, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3570 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      284: Illicit Flow From SDGNode 43 At SDGNode 3571, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3571 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      285: Illicit Flow From SDGNode 43 At SDGNode 3572, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3572 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      286: Illicit Flow From SDGNode 43 At SDGNode 3573, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3573 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      287: Illicit Flow From SDGNode 43 At SDGNode 3574, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3574 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      288: Illicit Flow From SDGNode 43 At SDGNode 3575, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3575 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      289: Illicit Flow From SDGNode 43 At SDGNode 3576, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3576 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      290: Illicit Flow From SDGNode 43 At SDGNode 3577, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3577 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      291: Illicit Flow From SDGNode 43 At SDGNode 3578, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3578 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      292: Illicit Flow From SDGNode 43 At SDGNode 3579, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3579 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      293: Illicit Flow From SDGNode 43 At SDGNode 3580, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3580 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      294: Illicit Flow From SDGNode 43 At SDGNode 3581, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3581 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      295: Illicit Flow From SDGNode 43 At SDGNode 3582, visible for low
+           15->17
+           Source: 43 - ret 0 Kind: ACTO Operator: act-out Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3582 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      296: Illicit Flow From SDGNode 45 At SDGNode 66, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      297: Illicit Flow From SDGNode 45 At SDGNode 69, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      298: Illicit Flow From SDGNode 45 At SDGNode 72, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 72 - param 1 [v19] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      299: Illicit Flow From SDGNode 45 At SDGNode 3550, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3550 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      300: Illicit Flow From SDGNode 45 At SDGNode 3555, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3555 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      301: Illicit Flow From SDGNode 45 At SDGNode 3558, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3558 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      302: Illicit Flow From SDGNode 45 At SDGNode 3564, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3564 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      303: Illicit Flow From SDGNode 45 At SDGNode 3566, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3566 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      304: Illicit Flow From SDGNode 45 At SDGNode 3567, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3567 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      305: Illicit Flow From SDGNode 45 At SDGNode 3568, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3568 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      306: Illicit Flow From SDGNode 45 At SDGNode 3569, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3569 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      307: Illicit Flow From SDGNode 45 At SDGNode 3570, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3570 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      308: Illicit Flow From SDGNode 45 At SDGNode 3571, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3571 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      309: Illicit Flow From SDGNode 45 At SDGNode 3572, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3572 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      310: Illicit Flow From SDGNode 45 At SDGNode 3573, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3573 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      311: Illicit Flow From SDGNode 45 At SDGNode 3574, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3574 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      312: Illicit Flow From SDGNode 45 At SDGNode 3575, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3575 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      313: Illicit Flow From SDGNode 45 At SDGNode 3576, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3576 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      314: Illicit Flow From SDGNode 45 At SDGNode 3577, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3577 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      315: Illicit Flow From SDGNode 45 At SDGNode 3578, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3578 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      316: Illicit Flow From SDGNode 45 At SDGNode 3579, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3579 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      317: Illicit Flow From SDGNode 45 At SDGNode 3580, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3580 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      318: Illicit Flow From SDGNode 45 At SDGNode 3581, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3581 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      319: Illicit Flow From SDGNode 45 At SDGNode 3582, visible for low
+           15->17
+           Source: 45 - v11 = v3.source Kind: EXPR Operator: reference Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3582 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      320: Illicit Flow From SDGNode 48 At SDGNode 66, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      321: Illicit Flow From SDGNode 48 At SDGNode 69, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      322: Illicit Flow From SDGNode 48 At SDGNode 72, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 72 - param 1 [v19] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      323: Illicit Flow From SDGNode 48 At SDGNode 3550, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3550 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      324: Illicit Flow From SDGNode 48 At SDGNode 3555, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3555 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      325: Illicit Flow From SDGNode 48 At SDGNode 3558, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3558 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      326: Illicit Flow From SDGNode 48 At SDGNode 3564, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3564 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      327: Illicit Flow From SDGNode 48 At SDGNode 3566, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3566 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      328: Illicit Flow From SDGNode 48 At SDGNode 3567, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3567 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      329: Illicit Flow From SDGNode 48 At SDGNode 3568, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3568 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      330: Illicit Flow From SDGNode 48 At SDGNode 3569, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3569 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      331: Illicit Flow From SDGNode 48 At SDGNode 3570, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3570 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      332: Illicit Flow From SDGNode 48 At SDGNode 3571, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3571 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      333: Illicit Flow From SDGNode 48 At SDGNode 3572, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3572 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      334: Illicit Flow From SDGNode 48 At SDGNode 3573, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3573 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      335: Illicit Flow From SDGNode 48 At SDGNode 3574, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3574 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      336: Illicit Flow From SDGNode 48 At SDGNode 3575, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3575 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      337: Illicit Flow From SDGNode 48 At SDGNode 3576, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3576 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      338: Illicit Flow From SDGNode 48 At SDGNode 3577, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3577 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      339: Illicit Flow From SDGNode 48 At SDGNode 3578, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3578 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      340: Illicit Flow From SDGNode 48 At SDGNode 3579, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3579 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      341: Illicit Flow From SDGNode 48 At SDGNode 3580, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3580 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      342: Illicit Flow From SDGNode 48 At SDGNode 3581, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3581 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      343: Illicit Flow From SDGNode 48 At SDGNode 3582, visible for low
+           15->17
+           Source: 48 - v12 = v10 + v11 Kind: EXPR Operator: assign Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3582 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      344: Illicit Flow From SDGNode 49 At SDGNode 66, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 66 - v18 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      345: Illicit Flow From SDGNode 49 At SDGNode 69, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 69 - v19 = v17 + v18 Kind: EXPR Operator: assign Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      346: Illicit Flow From SDGNode 49 At SDGNode 72, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 72 - param 1 [v19] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      347: Illicit Flow From SDGNode 49 At SDGNode 3550, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3550 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      348: Illicit Flow From SDGNode 49 At SDGNode 3555, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3555 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      349: Illicit Flow From SDGNode 49 At SDGNode 3558, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3558 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      350: Illicit Flow From SDGNode 49 At SDGNode 3564, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3564 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      351: Illicit Flow From SDGNode 49 At SDGNode 3566, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3566 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      352: Illicit Flow From SDGNode 49 At SDGNode 3567, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3567 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      353: Illicit Flow From SDGNode 49 At SDGNode 3568, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3568 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      354: Illicit Flow From SDGNode 49 At SDGNode 3569, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3569 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      355: Illicit Flow From SDGNode 49 At SDGNode 3570, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3570 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      356: Illicit Flow From SDGNode 49 At SDGNode 3571, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3571 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      357: Illicit Flow From SDGNode 49 At SDGNode 3572, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3572 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      358: Illicit Flow From SDGNode 49 At SDGNode 3573, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3573 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      359: Illicit Flow From SDGNode 49 At SDGNode 3574, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3574 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      360: Illicit Flow From SDGNode 49 At SDGNode 3575, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3575 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      361: Illicit Flow From SDGNode 49 At SDGNode 3576, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3576 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      362: Illicit Flow From SDGNode 49 At SDGNode 3577, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3577 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      363: Illicit Flow From SDGNode 49 At SDGNode 3578, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3578 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      364: Illicit Flow From SDGNode 49 At SDGNode 3579, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3579 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      365: Illicit Flow From SDGNode 49 At SDGNode 3580, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3580 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      366: Illicit Flow From SDGNode 49 At SDGNode 3581, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3581 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      367: Illicit Flow From SDGNode 49 At SDGNode 3582, visible for low
+           15->17
+           Source: 49 - v3.sink = v12 Kind: EXPR Operator: modify Source: main/Main.java Sr: 15 Er: 15 Sc: 0 Ec: 0
+           Sink: 3582 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      368: Illicit Flow From SDGNode 52 At SDGNode 3550, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3550 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      369: Illicit Flow From SDGNode 52 At SDGNode 3555, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3555 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      370: Illicit Flow From SDGNode 52 At SDGNode 3558, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3558 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      371: Illicit Flow From SDGNode 52 At SDGNode 3564, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3564 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      372: Illicit Flow From SDGNode 52 At SDGNode 3566, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3566 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      373: Illicit Flow From SDGNode 52 At SDGNode 3567, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3567 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      374: Illicit Flow From SDGNode 52 At SDGNode 3568, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3568 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      375: Illicit Flow From SDGNode 52 At SDGNode 3569, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3569 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      376: Illicit Flow From SDGNode 52 At SDGNode 3570, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3570 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      377: Illicit Flow From SDGNode 52 At SDGNode 3571, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3571 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      378: Illicit Flow From SDGNode 52 At SDGNode 3572, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3572 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      379: Illicit Flow From SDGNode 52 At SDGNode 3573, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3573 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      380: Illicit Flow From SDGNode 52 At SDGNode 3574, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3574 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      381: Illicit Flow From SDGNode 52 At SDGNode 3575, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3575 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      382: Illicit Flow From SDGNode 52 At SDGNode 3576, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3576 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      383: Illicit Flow From SDGNode 52 At SDGNode 3577, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3577 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      384: Illicit Flow From SDGNode 52 At SDGNode 3578, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3578 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      385: Illicit Flow From SDGNode 52 At SDGNode 3579, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3579 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      386: Illicit Flow From SDGNode 52 At SDGNode 3580, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3580 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      387: Illicit Flow From SDGNode 52 At SDGNode 3581, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3581 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      388: Illicit Flow From SDGNode 52 At SDGNode 3582, visible for low
+           16->17
+           Source: 52 - v13 = java.lang.System.out Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3582 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      389: Illicit Flow From SDGNode 54 At SDGNode 3550, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3550 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      390: Illicit Flow From SDGNode 54 At SDGNode 3555, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3555 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      391: Illicit Flow From SDGNode 54 At SDGNode 3558, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3558 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      392: Illicit Flow From SDGNode 54 At SDGNode 3564, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3564 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      393: Illicit Flow From SDGNode 54 At SDGNode 3566, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3566 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      394: Illicit Flow From SDGNode 54 At SDGNode 3567, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3567 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      395: Illicit Flow From SDGNode 54 At SDGNode 3568, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3568 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      396: Illicit Flow From SDGNode 54 At SDGNode 3569, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3569 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      397: Illicit Flow From SDGNode 54 At SDGNode 3570, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3570 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      398: Illicit Flow From SDGNode 54 At SDGNode 3571, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3571 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      399: Illicit Flow From SDGNode 54 At SDGNode 3572, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3572 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      400: Illicit Flow From SDGNode 54 At SDGNode 3573, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3573 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      401: Illicit Flow From SDGNode 54 At SDGNode 3574, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3574 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      402: Illicit Flow From SDGNode 54 At SDGNode 3575, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3575 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      403: Illicit Flow From SDGNode 54 At SDGNode 3576, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3576 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      404: Illicit Flow From SDGNode 54 At SDGNode 3577, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3577 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      405: Illicit Flow From SDGNode 54 At SDGNode 3578, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3578 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      406: Illicit Flow From SDGNode 54 At SDGNode 3579, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3579 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      407: Illicit Flow From SDGNode 54 At SDGNode 3580, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3580 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      408: Illicit Flow From SDGNode 54 At SDGNode 3581, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3581 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      409: Illicit Flow From SDGNode 54 At SDGNode 3582, visible for low
+           16->17
+           Source: 54 - v14 = v3.sink Kind: EXPR Operator: reference Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3582 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      410: Illicit Flow From SDGNode 57 At SDGNode 3550, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3550 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      411: Illicit Flow From SDGNode 57 At SDGNode 3555, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3555 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      412: Illicit Flow From SDGNode 57 At SDGNode 3558, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3558 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      413: Illicit Flow From SDGNode 57 At SDGNode 3564, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3564 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      414: Illicit Flow From SDGNode 57 At SDGNode 3566, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3566 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      415: Illicit Flow From SDGNode 57 At SDGNode 3567, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3567 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      416: Illicit Flow From SDGNode 57 At SDGNode 3568, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3568 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      417: Illicit Flow From SDGNode 57 At SDGNode 3569, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3569 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      418: Illicit Flow From SDGNode 57 At SDGNode 3570, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3570 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      419: Illicit Flow From SDGNode 57 At SDGNode 3571, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3571 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      420: Illicit Flow From SDGNode 57 At SDGNode 3572, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3572 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      421: Illicit Flow From SDGNode 57 At SDGNode 3573, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3573 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      422: Illicit Flow From SDGNode 57 At SDGNode 3574, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3574 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      423: Illicit Flow From SDGNode 57 At SDGNode 3575, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3575 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      424: Illicit Flow From SDGNode 57 At SDGNode 3576, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3576 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      425: Illicit Flow From SDGNode 57 At SDGNode 3577, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3577 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      426: Illicit Flow From SDGNode 57 At SDGNode 3578, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3578 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      427: Illicit Flow From SDGNode 57 At SDGNode 3579, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3579 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      428: Illicit Flow From SDGNode 57 At SDGNode 3580, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3580 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      429: Illicit Flow From SDGNode 57 At SDGNode 3581, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3581 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      430: Illicit Flow From SDGNode 57 At SDGNode 3582, visible for low
+           16->17
+           Source: 57 - v13.println(v14) Kind: CALL Operator: call Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3582 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      431: Illicit Flow From SDGNode 3542 At SDGNode 3550, visible for low
+           16->17
+           Source: 3542 - [MR] |0|UNIQ(nextChar) Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3550 - [MR] |0|UNIQ(nextChar) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      432: Illicit Flow From SDGNode 3543 At SDGNode 3555, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3555 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      433: Illicit Flow From SDGNode 3543 At SDGNode 3558, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3558 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      434: Illicit Flow From SDGNode 3543 At SDGNode 3564, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3564 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      435: Illicit Flow From SDGNode 3543 At SDGNode 3566, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3566 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      436: Illicit Flow From SDGNode 3543 At SDGNode 3567, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3567 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      437: Illicit Flow From SDGNode 3543 At SDGNode 3568, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3568 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      438: Illicit Flow From SDGNode 3543 At SDGNode 3569, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3569 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      439: Illicit Flow From SDGNode 3543 At SDGNode 3570, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3570 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      440: Illicit Flow From SDGNode 3543 At SDGNode 3571, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3571 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      441: Illicit Flow From SDGNode 3543 At SDGNode 3572, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3572 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      442: Illicit Flow From SDGNode 3543 At SDGNode 3573, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3573 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      443: Illicit Flow From SDGNode 3543 At SDGNode 3574, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3574 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      444: Illicit Flow From SDGNode 3543 At SDGNode 3575, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3575 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      445: Illicit Flow From SDGNode 3543 At SDGNode 3576, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3576 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      446: Illicit Flow From SDGNode 3543 At SDGNode 3577, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3577 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      447: Illicit Flow From SDGNode 3543 At SDGNode 3578, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3578 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      448: Illicit Flow From SDGNode 3543 At SDGNode 3579, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3579 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      449: Illicit Flow From SDGNode 3543 At SDGNode 3580, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3580 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      450: Illicit Flow From SDGNode 3543 At SDGNode 3581, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3581 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      451: Illicit Flow From SDGNode 3543 At SDGNode 3582, visible for low
+           16->17
+           Source: 3543 - [MR] |141|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3582 - [R] |0|UNIQ([]) Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      452: Illicit Flow From SDGNode 3547 At SDGNode 3555, visible for low
+           16->17
+           Source: 3547 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3555 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      453: Illicit Flow From SDGNode 3547 At SDGNode 3558, visible for low
+           16->17
+           Source: 3547 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3558 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      454: Illicit Flow From SDGNode 3547 At SDGNode 3564, visible for low
+           16->17
+           Source: 3547 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3564 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      455: Illicit Flow From SDGNode 3547 At SDGNode 3566, visible for low
+           16->17
+           Source: 3547 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3566 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      456: Illicit Flow From SDGNode 3547 At SDGNode 3567, visible for low
+           16->17
+           Source: 3547 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3567 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      457: Illicit Flow From SDGNode 3548 At SDGNode 3555, visible for low
+           16->17
+           Source: 3548 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3555 - [MR] |141|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      458: Illicit Flow From SDGNode 3548 At SDGNode 3558, visible for low
+           16->17
+           Source: 3548 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3558 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      459: Illicit Flow From SDGNode 3548 At SDGNode 3564, visible for low
+           16->17
+           Source: 3548 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3564 - [R] |8|MERGE [] Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      460: Illicit Flow From SDGNode 3548 At SDGNode 3566, visible for low
+           16->17
+           Source: 3548 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3566 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0
+      461: Illicit Flow From SDGNode 3548 At SDGNode 3567, visible for low
+           16->17
+           Source: 3548 - [MR] |8|MERGE * Kind: ACTO Operator: act-out Source: main/Main.java Sr: 16 Er: 16 Sc: 0 Ec: 0
+           Sink: 3567 - [MR] |8|MERGE * Kind: ACTI Operator: act-in Source: main/Main.java Sr: 17 Er: 17 Sc: 0 Ec: 0

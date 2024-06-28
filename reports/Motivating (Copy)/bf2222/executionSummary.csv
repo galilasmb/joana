@@ -1,0 +1,6 @@
+Method; Precision; Exceptions; SdgCreated; CgNodes; CgEdges; SdgNodes; SdgEdges; Time (ms); Memory (M); HasSourcedAndSink; HasLeftToRightVio; HasRightToLeftVio; TotalVios; InstVios; LineVios; DetailedLineVios; Left; Right
+void main.Main.cleaner(); UNLIMITED_OBJECT_SENSITIVE; No; No; -; -; -; -; -; -; -; -; -; -; -; -; -; [17, 18, 22]; [20, 21, 23]
+void main.Main.Main(); UNLIMITED_OBJECT_SENSITIVE; No; Yes; 4; 4; 196; 965; 6648; 558; No; -; -; -; -; -; -; [17, 18, 22]; [20, 21, 23]
+void main.Main.cleaner(); UNLIMITED_OBJECT_SENSITIVE; No; Yes; 4; 4; 196; 965; 6648; 558; No; -; -; -; -; -; -; [17, 18, 22]; [20, 21, 23]
+void main.Main.cleaner(); UNLIMITED_OBJECT_SENSITIVE; No; No; -; -; -; -; -; -; -; -; -; -; -; -; -; [17, 18, 22]; [20, 21, 23]
+void main.Main.Main(); UNLIMITED_OBJECT_SENSITIVE; No; Yes; 2; 2; 29; 125; 6215; 487; No; -; -; -; -; -; -; [17, 18, 22]; [20, 21, 23]

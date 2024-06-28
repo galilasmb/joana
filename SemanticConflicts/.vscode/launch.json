@@ -1,0 +1,66 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ExecutionResult",
+            "request": "launch",
+            "mainClass": "execResult.ExecutionResult",
+            "projectName": "SemanticConflicts"
+        },
+        {
+            "type": "java",
+            "name": "LineVio",
+            "request": "launch",
+            "mainClass": "execResult.LineVio",
+            "projectName": "SemanticConflicts"
+        },
+        {
+            "type": "java",
+            "name": "EntryPoint",
+            "request": "launch",
+            "mainClass": "main.EntryPoint",
+            "projectName": "SemanticConflicts"
+        },
+        {
+            "type": "java",
+            "name": "JoanaInvocation",
+            "request": "launch",
+            "mainClass": "main.JoanaInvocation",
+            "projectName": "SemanticConflicts",
+            "args": [
+                "/media/galileu/Arquivos/Doutorado/Pesquisa/JOANA/rsmbf/",
+                "/media/galileu/Arquivos/joana/reports/Motivating/bf2222",
+                "/media/galileu/Arquivos/joana/sdgs/Motivating/bf2222",
+                "37; bf2222; Fri Jul 18 04:55:50 BRT 2014; /media/galileu/Arquivos/joana/downloads/Motivating/bf2222/original-without-dependencies/merge/learning/src/main/Main.java; void main.Main.main(String[]);37; [12, 13, 17]; [15, 16, 18]",
+                "/media/galileu/Arquivos/Doutorado/Pesquisa/JOANA/rsmbf/libs/",
+                "ignoreExceptions=true",
+                "initialPrecision=4"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "TestJoanaInvocation",
+            "request": "launch",
+            "mainClass": "main.TestJoanaInvocation",
+            "projectName": "SemanticConflicts"
+        },
+        {
+            "type": "java",
+            "name": "FileUtils",
+            "request": "launch",
+            "mainClass": "util.FileUtils",
+            "projectName": "SemanticConflicts"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+Setting up analysis scope... (from file /media/galileu/Arquivos/Doutorado/Pesquisa/JOANA/rsmbf/joana.contrib.lib/stubs/jSDG-stubs-jre1.5.jar) done.
+Creating class hierarchy... (18310 classes) done.
+Setting up entrypoints... Setting up entrypoint main.Main.<init>(L;)V... done.
+Building system dependence graph... 
+	callgraph: 2 nodes and 2 edges
+	intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.convert.summary..
+done.
+Time needed: 6215ms - Memory: 487M used.
+SDG INFO
+main.Main
+    Attributes: 0
+    Methods: 1
+        void main.Main.<init>() - Instructions: 2
+            LINE 8: (void main.Main.<init>():1) this.<init>()
+            LINE 8: (void main.Main.<init>():4) return
+com.ibm.wala.FakeRootClass
+    Attributes: 0
+    Methods: 1
+        void com.ibm.wala.FakeRootClass.fakeRootMethod() - Instructions: 0
