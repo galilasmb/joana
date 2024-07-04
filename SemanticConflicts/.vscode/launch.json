@@ -39,11 +39,11 @@
             "mainClass": "main.JoanaInvocation",
             "projectName": "SemanticConflicts",
             "args": [
-                "/media/galileu/Arquivos/Doutorado/Pesquisa/JOANA/rsmbf/",
-                "/media/galileu/Arquivos/joana/reports/Motivating/bf2222",
-                "/media/galileu/Arquivos/joana/sdgs/Motivating/bf2222",
-                "37; bf2222; Fri Jul 18 04:55:50 BRT 2014; /media/galileu/Arquivos/joana/downloads/Motivating/bf2222/original-without-dependencies/merge/learning/src/main/Main.java; void main.Main.main(String[]);37; [12, 13, 17]; [15, 16, 18]",
-                "/media/galileu/Arquivos/Doutorado/Pesquisa/JOANA/rsmbf/libs/",
+                "/Users/galileu/Documents/Doutorado/Pesquisa/JOANA/rsmbf/",
+                "/Users/galileu/Documents/joana/reports/Motivating/bf2222",
+                "/Users/galileu/Documents/joana/sdgs/Motivating/bf2222",
+                "37; bf2222; Fri Jul 18 04:55:50 BRT 2014; /Users/galileu/Documents/joana/downloads/Motivating/bf2222/original-without-dependencies/merge/learning/src/main/Main.java; void main.Main.main(java.lang.String[]);37; [12, 13, 17]; [15, 16, 18]",
+                "/Users/galileu/Documents/Doutorado/Pesquisa/JOANA/rsmbf/libs",
                 "ignoreExceptions=true",
                 "initialPrecision=4"
             ]
