@@ -3,7 +3,7 @@ SDG: 6198 nodes and 90047 edges
 
 
 ANALYSIS
-Method: void main.Main.main(String[])
+Method: void main.Main.main(java.lang.String[])
     LINE 11: (void main.Main.main(java.lang.String[]):0) v3 = new main.Main
     LINE 11: (void main.Main.main(java.lang.String[]):4) v3.<init>()
     LINE 12: (void main.Main.main(java.lang.String[]):10) v3.source = #(0)
@@ -30,117 +30,117 @@ Method: void main.Main.main(String[])
     LINE 19: (void main.Main.main(java.lang.String[]):81) return
 1.1.a analysis
 Sources: 8
-	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):10) v3.source = #(0)
 	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):59) v18 = v3.sink
-	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):51) v16 = java.lang.System.out
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):10) v3.source = #(0)
 	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):19) v3.source = v8
-	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):62) v19 = v17 + v18
-	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):63) v16.println(v19)
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):51) v16 = java.lang.System.out
 	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))
 	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):55) v17 = v3.source
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):62) v19 = v17 + v18
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):63) v16.println(v19)
 Sinks: 12
-	SINK: SINK/(void main.Main.main(java.lang.String[]):48) v13.println(v14)
-	SINK: SINK/(void main.Main.main(java.lang.String[]):34) v11 = v3.source
 	SINK: SINK/(void main.Main.main(java.lang.String[]):45) v14 = v3.sink
-	SINK: SINK/(void main.Main.main(java.lang.String[]):38) v3.sink = v12
 	SINK: SINK/(void main.Main.main(java.lang.String[]):78) v21.println(v24)
-	SINK: SINK/(void main.Main.main(java.lang.String[]):66) v21 = java.lang.System.out
-	SINK: SINK/(void main.Main.main(java.lang.String[]):37) v12 = v10 + v11
+	SINK: SINK/(void main.Main.main(java.lang.String[]):48) v13.println(v14)
 	SINK: SINK/(void main.Main.main(java.lang.String[]):77) v24 = v22 + v23
-	SINK: SINK/(void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))
-	SINK: SINK/(void main.Main.main(java.lang.String[]):41) v13 = java.lang.System.out
-	SINK: SINK/(void main.Main.main(java.lang.String[]):74) v23 = v3.source
 	SINK: SINK/(void main.Main.main(java.lang.String[]):70) v22 = v3.sink
+	SINK: SINK/(void main.Main.main(java.lang.String[]):74) v23 = v3.source
+	SINK: SINK/(void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))
+	SINK: SINK/(void main.Main.main(java.lang.String[]):34) v11 = v3.source
+	SINK: SINK/(void main.Main.main(java.lang.String[]):37) v12 = v10 + v11
+	SINK: SINK/(void main.Main.main(java.lang.String[]):38) v3.sink = v12
+	SINK: SINK/(void main.Main.main(java.lang.String[]):41) v13 = java.lang.System.out
+	SINK: SINK/(void main.Main.main(java.lang.String[]):66) v21 = java.lang.System.out
 1.1.b analysis
 Sources: 12
-	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):45) v14 = v3.sink
-	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):70) v22 = v3.sink
-	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):78) v21.println(v24)
-	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):37) v12 = v10 + v11
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):77) v24 = v22 + v23
 	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):66) v21 = java.lang.System.out
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):70) v22 = v3.sink
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):37) v12 = v10 + v11
 	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):41) v13 = java.lang.System.out
-	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):38) v3.sink = v12
-	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))
 	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):74) v23 = v3.source
 	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):48) v13.println(v14)
-	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):77) v24 = v22 + v23
 	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):34) v11 = v3.source
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):45) v14 = v3.sink
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):38) v3.sink = v12
+	SOURCE: SOURCE/(void main.Main.main(java.lang.String[]):78) v21.println(v24)
 Sinks: 8
 	SINK: SINK/(void main.Main.main(java.lang.String[]):55) v17 = v3.source
-	SINK: SINK/(void main.Main.main(java.lang.String[]):62) v19 = v17 + v18
-	SINK: SINK/(void main.Main.main(java.lang.String[]):51) v16 = java.lang.System.out
+	SINK: SINK/(void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))
 	SINK: SINK/(void main.Main.main(java.lang.String[]):63) v16.println(v19)
 	SINK: SINK/(void main.Main.main(java.lang.String[]):59) v18 = v3.sink
-	SINK: SINK/(void main.Main.main(java.lang.String[]):10) v3.source = #(0)
+	SINK: SINK/(void main.Main.main(java.lang.String[]):62) v19 = v17 + v18
 	SINK: SINK/(void main.Main.main(java.lang.String[]):19) v3.source = v8
-	SINK: SINK/(void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))
+	SINK: SINK/(void main.Main.main(java.lang.String[]):10) v3.source = #(0)
+	SINK: SINK/(void main.Main.main(java.lang.String[]):51) v16 = java.lang.System.out
 
 VIOLATIONS BETWEEN LEFT AND RIGHT
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):51) v16 = java.lang.System.out to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):74) v23 = v3.source, visible for low, Value: 1
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):77) v24 = v22 + v23, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):70) v22 = v3.sink, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):34) v11 = v3.source, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act1, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):55) v17 = v3.source to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):48) v13.println(v14)->act1, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):48) v13.println(v14)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):77) v24 = v22 + v23, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):55) v17 = v3.source to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):48) v13.println(v14)->act1, visible for low, Value: 1
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):34) v11 = v3.source, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):70) v22 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):45) v14 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):48) v13.println(v14)->act0, visible for low, Value: 21
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):38) v3.sink = v12, visible for low, Value: 1
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):74) v23 = v3.source, visible for low, Value: 1
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):70) v22 = v3.sink, visible for low, Value: 1
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):77) v24 = v22 + v23, visible for low, Value: 1
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):45) v14 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):48) v13.println(v14)->act1, visible for low, Value: 1
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act1, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):63) v16.println(v19) to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):48) v13.println(v14)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):77) v24 = v22 + v23, visible for low, Value: 1
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):34) v11 = v3.source, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18 to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0 to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 31
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):77) v24 = v22 + v23, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):38) v3.sink = v12, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):74) v23 = v3.source, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):45) v14 = v3.sink, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18 to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):59) v18 = v3.sink to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):70) v22 = v3.sink, visible for low, Value: 1
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):34) v11 = v3.source, visible for low, Value: 1
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):45) v14 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):38) v3.sink = v12, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):63) v16.println(v19) to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):74) v23 = v3.source, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1))->ret to (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0 to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 31
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act1, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):51) v16 = java.lang.System.out to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):16) v8 = v3.source(#(1)) to (void main.Main.main(java.lang.String[]):48) v13.println(v14)->act1, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):59) v18 = v3.sink to (void main.Main.main(java.lang.String[]):78) v21.println(v24)->act0, visible for low, Value: 21
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):19) v3.source = v8 to (void main.Main.main(java.lang.String[]):38) v3.sink = v12, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):41) v13 = java.lang.System.out to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))->ret to (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):34) v11 = v3.source to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act1, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11 to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act1, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1)) to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1)) to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):38) v3.sink = v12 to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))->ret to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1)) to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):41) v13 = java.lang.System.out to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):34) v11 = v3.source to (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18, visible for low, Value: 1
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11 to (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):45) v14 = v3.sink to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))->ret to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))->ret to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):38) v3.sink = v12 to (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):34) v11 = v3.source to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1)) to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act1, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11 to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):48) v13.println(v14)->act0 to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 31
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):34) v11 = v3.source to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11 to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):38) v3.sink = v12 to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
-Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1)) to (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18, visible for low, Value: 1
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):38) v3.sink = v12 to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):48) v13.println(v14)->act0 to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 31
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))->ret to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act1, visible for low, Value: 1
 Key: Illegal Flow from (void main.Main.main(java.lang.String[]):48) v13.println(v14) to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):34) v11 = v3.source to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):38) v3.sink = v12 to (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11 to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act1, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))->ret to (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):45) v14 = v3.sink to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):34) v11 = v3.source to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11 to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1)) to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):38) v3.sink = v12 to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1))->ret to (void main.Main.main(java.lang.String[]):59) v18 = v3.sink, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):30) v10 = v3.sink(#(1)) to (void main.Main.main(java.lang.String[]):62) v19 = v17 + v18, visible for low, Value: 1
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):34) v11 = v3.source to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
+Key: Illegal Flow from (void main.Main.main(java.lang.String[]):37) v12 = v10 + v11 to (void main.Main.main(java.lang.String[]):63) v16.println(v19)->act0, visible for low, Value: 21
 INSTRUCTION VIOLATIONS: 61
 TOTAL VIOLATIONS: 461
 LINE violations between left and right
-Method: void main.Main.main(String[])
+Method: void main.Main.main(java.lang.String[])
 		Illegal flow from void main.Main.main(java.lang.String[]) (line 13) to void main.Main.main(java.lang.String[]) (line 15), Instructions: 9, Violations: 9
 		Illegal flow from void main.Main.main(java.lang.String[]) (line 13) to void main.Main.main(java.lang.String[]) (line 16), Instructions: 7, Violations: 27
 		Illegal flow from void main.Main.main(java.lang.String[]) (line 13) to void main.Main.main(java.lang.String[]) (line 18), Instructions: 15, Violations: 75
@@ -151,7 +151,7 @@ Method: void main.Main.main(String[])
 	Method Instruction Violations: 61
 	Method Total Violations: 461
 Total Line Violations: 6
-void main.Main.main(String[])
+void main.Main.main(java.lang.String[])
       1: Illicit Flow From SDGNode 29 At SDGNode 45, visible for low
            13->15
            Source: 29 - v8 = v3.source(#(1)) Kind: CALL Operator: call Source: main/Main.java Sr: 13 Er: 13 Sc: 0 Ec: 0

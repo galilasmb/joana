@@ -1,11 +1,11 @@
-Setting up analysis scope... (from file /media/galileu/Arquivos/Doutorado/Pesquisa/JOANA/rsmbf/joana.contrib.lib/stubs/jSDG-stubs-jre1.5.jar) done.
+Setting up analysis scope... (from file /Users/galileu/Documents/Doutorado/Pesquisa/JOANA/rsmbf/joana.contrib.lib/stubs/jSDG-stubs-jre1.5.jar) done.
 Creating class hierarchy... (18309 classes) done.
-Setting up entrypoints... Setting up entrypoint main.Main.main([LString;)V... done.
+Setting up entrypoints... Setting up entrypoint main.Main.main([Ljava/lang/String;)V... done.
 Building system dependence graph... 
 	callgraph: 113 nodes and 141 edges
 	intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.convert.summary..
 done.
-Time needed: 6756ms - Memory: 897M used.
+Time needed: 5345ms - Memory: 589M used.
 SDG INFO
 java.lang.StringBuilder
     Attributes: 0
