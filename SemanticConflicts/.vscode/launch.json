@@ -45,7 +45,7 @@
                 "/Users/galileu/Documents/Doutorado/Pesquisa/JOANA/rsmbf/",
                 "/Users/galileu/joana/reports/druid/05168808c278c080c59c19e858d9471b316cd1f5/com/metamx/druid/loading/S3SegmentPusher",
                 "/Users/galileu/joana/sdgs/druid/05168808c278c080c59c19e858d9471b316cd1f5/com/metamx/druid/loading/S3SegmentPusher",
-                "2;05168808c278c080c59c19e858d9471b316cd1f5;Thu Jul 18 00:00:16  2024;/Users/galileu/mergedataset/druid/05168808c278c080c59c19e858d9471b316cd1f5/source/com/metamx/druid/loading/S3SegmentPusher/merge.java;com.metamx.druid.client.DataSegment com.metamx.druid.loading.S3SegmentPusher.push(final File indexFilesDir, com.metamx.druid.client.DataSegment segment);439;[66, 118, 139, 110];[105, 125]",
+                "2;05168808c278c080c59c19e858d9471b316cd1f5;Thu Jul 18 00:00:16  2024;/Users/galileu/mergedataset/druid/05168808c278c080c59c19e858d9471b316cd1f5/source/com/metamx/druid/loading/S3SegmentPusher/merge.java;com.metamx.druid.client.DataSegment com.metamx.druid.loading.S3SegmentPusher.push(File, DataSegment);439;[66, 118, 139, 110];[105, 125]",
                 "/Users/galileu/Documents/Doutorado/Pesquisa/JOANA/rsmbf/libs",
                 "ignoreExceptions=true",
                 "initialPrecision=4"
